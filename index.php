@@ -84,12 +84,39 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="contenitore">
-        <?php foreach($data as $value) { 
-            echo $value["title"];
-            echo $value["text"];
-        }
-        ?>         
-    </div>
+    <header>
+        <section class="flex">
+            <div>
+                <img class="logo" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+                <span class="logo_text">Privacy e termini</span>
+            </div>
+            <div>
+                <div class="option_link">
+                    <a aria-label="App Google" href="https://www.google.it/intl/it/about/products" aria-expanded="false" role="button" tabindex="0">
+                        <svg class="options" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                    </a>
+                </div>
+                <img class="user_logo" src="https://lh3.googleusercontent.com/ogw/ADea4I7qV6NkYbMrJqEmPsD-yOyk9epb1Ft2_vDSLyHo=s32-c-mo" srcset="https://lh3.googleusercontent.com/ogw/ADea4I7qV6NkYbMrJqEmPsD-yOyk9epb1Ft2_vDSLyHo=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/ADea4I7qV6NkYbMrJqEmPsD-yOyk9epb1Ft2_vDSLyHo=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="">
+            </div>
+        </section>
+        <nav>
+            <ul role="navigation">
+                <li><a href="">Introduzione</a></li>
+                <li><a href="privacy">Norme sulla privacy</a></li>
+                <li><a href="terms">Termini di servizio</a></li>
+                <li><a href="technologies">Tecnologie</a></li>
+                <li class="active"><a href="faq">Domande frequenti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenitore">
+            <?php foreach($data as $value) {
+                echo $value["title"];
+                echo $value["text"];
+            }
+            ?>
+        </div>
+    </main>
 </body>
 </html>

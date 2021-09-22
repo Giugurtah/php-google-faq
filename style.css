@@ -1,11 +1,15 @@
+/* Generics */
 body {
     color: rgba(0,0,0,0.87);
     font-family: Roboto,arial,sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.54;
+
+    margin: 0;
 }
 
+/* Main */
 h2 {
     color: #3c4043;
     font-family: 'Google Sans',sans-serif;
@@ -37,17 +41,113 @@ ol {
     padding: 0;
 }
 
-li {
+main li {
     line-height: 24px;
     padding-left: 16px;
 }
 
-a {
+main a {
     color: #3367d6;
     text-decoration: none;
 }
 
+/* Header style */
+header section, header nav {
+    padding: 0 15px;
+}
+
+header section {
+    padding-top: 15px;
+}
+
+header nav {
+    border-bottom: 1px solid rgba(151,151,151,0.5);
+}
+
+header ul {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 0;
+
+    height: 35px;
+    margin: 0;
+    list-style: none;
+}
+
+header li {
+    font-family: 'Google Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.43;
+    margin: 0 42px 0 0;
+    padding: 0;
+}
+
+header a {
+    color: #5f6368;
+    padding: 0 0 6px 0;
+    text-decoration: none;
+}
+
+/* Utility */
 .contenitore {
     width: 1000px;
     margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+    width: 74px;
+}
+
+.logo_text {
+    color: #5f6368;
+    opacity: 1;
+
+    display: inline-block;
+    font-family: 'Product Sans',Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    
+    vertical-align: middle;
+}
+
+.option_link {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 24px;
+    height: 24px;
+}
+
+.options {
+    color: #5f6368;
+    opacity: 1;
+}
+
+.user_logo {
+    vertical-align: middle;
+
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+
+    margin-left: 20px;
+}
+
+.active {
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
+}
+.active a {
+    color: #3367d6;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
